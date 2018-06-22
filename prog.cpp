@@ -44,6 +44,6 @@ if (sqr < 0 ){ sqr=sqr*(-1);}
 			  cout << sqr;
 			   }
 else cout << "такого треуугольник не существует";
-//cout <<"max 1: "<< max << "max 2: " <<max_1;
 return 0;
+//
 }
