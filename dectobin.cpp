@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-vector<int>& Dectobin (int a, vector<int>& vector_a, int *ptrb){
+vector<int>& Dectobin (int a, vector<int>& vector_a, int *ptrb){// передача вектора по ссылке и его возвращение, а так же принятие переменной для определения размера массива
 	int temp_a = a;
 	int b;
 	for (b=0; b<= vector_a.size(); b++){
