@@ -15,9 +15,10 @@ int main ()
 {
 	int a,ptrb;
 	cin >> a;
-	vector <int> vector_a(a);
+	vector <int> vector_a(150);
 	Dectobin(a, vector_a, &ptrb);
 	for (int i = ptrb; i>=0; i--){
 		cout << vector_a[i];}
+	cout <<endl<< vector_a.size();
 	return 0;
 }
