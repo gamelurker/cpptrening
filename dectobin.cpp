@@ -14,7 +14,7 @@ vector<int>& Dectobin (int a, vector<int>& vector_a, int *ptrb){// переда�
 }
 int main ()
 {
-	unsigned long int a;
+	float a;
 	int ptrb;
 	cin >> a;
 	vector <int> vector_a(static_cast<int>(log2(a)));
