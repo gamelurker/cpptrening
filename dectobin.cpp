@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <math.h>
 using namespace std;
 vector<int>& Dectobin (int a, vector<int>& vector_a, int *ptrb){// передача вектора по ссылке и его возвращение, а так же принятие переменной для определения размера массива
 	int temp_a = a;
@@ -13,9 +14,10 @@ vector<int>& Dectobin (int a, vector<int>& vector_a, int *ptrb){// переда�
 }
 int main ()
 {
-	int a,ptrb;
+	unsigned long int a;
+	int ptrb;
 	cin >> a;
-	vector <int> vector_a(150);
+	vector <int> vector_a(static_cast<int>(log2(a)));
 	Dectobin(a, vector_a, &ptrb);
 	for (int i = ptrb; i>=0; i--){
 		cout << vector_a[i];}
